@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Content Moderation</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <main class="moderation-panel">
+        <header>
+          <h2>Content Moderation</h2>
+        </header>
+
+        <div class="controls-row">
+          <div class="filters">
+            <select class="select-status">
+              <option>All Statuses</option>
+              <option>Pending</option>
+              <option>Approved</option>
+              <option>Flagged</option>
+            </select>
+
+            <div class="search">
+              <i class="ri-search-line search-icon"></i>
+              <input type="search" placeholder="Search author..." />
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn-primary">Bulk Approve</button>
+            <button class="btn btn-outline">Bulk Archive</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="table-wrap">
+        <div class="table-head">
+          <div class="col title-col">Title</div>
+          <div class="col author-col">Author</div>
+          <div class="col status-col">Status</div>
+          <div class="col actions-col">Actions</div>
+        </div>
+
+        <ul class="table-body">
+          <li class="row">
+            <div class="col title-col">
+              <strong>The Impact of AI on Modern Journalism</strong>
+            </div>
+            <div class="col author-col"><strong>Eleanor Vance</strong></div>
+            <div class="col status-col"><span class="badge pending">Pending</span></div>
+            <div class="col actions-col">
+              <button class="icon-btn accept" title="approve"><i class="ri-check-line"></i></button>
+              <button class="icon-btn reject" title="reject"><i class="ri-close-line"></i></button>
+              <button class="btn-revision"><i class="ri-edit-2-line"></i> Revision</button>
+            </div>
+          </li>
+
+          <li class="row">
+            <div class="col title-col"><strong>Sustainable Urban Planning: A Global Perspective</strong></div>
+            <div class="col author-col"><strong>Dr. Marcus Thorne</strong></div>
+            <div class="col status-col"><span class="badge approved">Approved</span></div>
+            <div class="col actions-col">
+              <button class="icon-btn accept"><i class="ri-check-line"></i></button>
+              <button class="icon-btn reject"><i class="ri-close-line"></i></button>
+              <button class="btn-revision"><i class="ri-edit-2-line"></i> Revision</button>
+            </div>
+          </li>
+
+          <li class="row">
+            <div class="col title-col"><strong>Decoding Quantum Computing: From Theory to Reality</strong></div>
+            <div class="col author-col"><strong>Sophia Chen</strong></div>
+            <div class="col status-col"><span class="badge flagged">Flagged</span></div>
+            <div class="col actions-col">
+              <button class="icon-btn accept"><i class="ri-check-line"></i></button>
+              <button class="icon-btn reject"><i class="ri-close-line"></i></button>
+              <button class="btn-revision"><i class="ri-edit-2-line"></i> Revision</button>
+            </div>
+          </li>
+
+          <li class="row">
+            <div class="col title-col"><strong>The Future of Remote Work: Beyond the Pandemic</strong></div>
+            <div class="col author-col"><strong>James Patterson</strong></div>
+            <div class="col status-col"><span class="badge pending">Pending</span></div>
+            <div class="col actions-col">
+              <button class="icon-btn accept"><i class="ri-check-line"></i></button>
+              <button class="icon-btn reject"><i class="ri-close-line"></i></button>
+              <button class="btn-revision"><i class="ri-edit-2-line"></i> Revision</button>
+            </div>
+          </li>
+
+          <li class="row">
+            <div class="col title-col"><strong>Ancient Civilizations: New Discoveries in Archaeology</strong></div>
+            <div class="col author-col"><strong>Dr. Lena Petrova</strong></div>
+            <div class="col status-col"><span class="badge approved">Approved</span></div>
+            <div class="col actions-col">
+              <button class="icon-btn accept"><i class="ri-check-line"></i></button>
+              <button class="icon-btn reject"><i class="ri-close-line"></i></button>
+              <button class="btn-revision"><i class="ri-edit-2-line"></i> Revision</button>
+            </div>
+          </li>
+
+          <li class="row">
+            <div class="col title-col"><strong>Plant-Based Diets: Health Benefits and Common Misconceptions</strong></div>
+            <div class="col author-col"><strong>Sarah Jenkins</strong></div>
+            <div class="col status-col"><span class="badge flagged">Flagged</span></div>
+            <div class="col actions-col">
+              <button class="icon-btn accept"><i class="ri-check-line"></i></button>
+              <button class="icon-btn reject"><i class="ri-close-line"></i></button>
+              <button class="btn-revision"><i class="ri-edit-2-line"></i> Revision</button>
+            </div>
+          </li>
+
+          <li class="row">
+            <div class="col title-col"><strong>The Ethics of Genetic Engineering in Modern Medicine</strong></div>
+            <div class="col author-col"><strong>Dr. Alan Turing</strong></div>
+            <div class="col status-col"><span class="badge pending">Pending</span></div>
+            <div class="col actions-col">
+              <button class="icon-btn accept"><i class="ri-check-line"></i></button>
+              <button class="icon-btn reject"><i class="ri-close-line"></i></button>
+              <button class="btn-revision"><i class="ri-edit-2-line"></i> Revision</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <aside class="preview-panel">
+      <div class="preview-card">
+        <h3 class="preview-title">The Impact of AI on Modern Journalism</h3>
+        <p class="preview-author">By Eleanor Vance</p>
+        <p class="preview-status">Pending</p>
+
+        <h4>Content Excerpt</h4>
+        <p class="excerpt">
+          Artificial intelligence is rapidly transforming the landscape of journalism, offering new tools for data analysis, content generation, and audience engagement.
+          However, concerns about job displacement, algorithmic bias, and the potential for misinformation remain prominent. This article explores the dual nature
+          of AI's influence, highlighting both its promising applications and the ethical dilemmas it presents to media organizations worldwide.
+        </p>
+      </div>
+    </aside>
+
+  </div>
+
+</body>
+</html>
